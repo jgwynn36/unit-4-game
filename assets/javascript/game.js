@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    var Random = Math.floor(Math.random() * 101 + 19); 
+    var Random = Math.floor(Math.random() * 101 + 19);
 
     $('#randomNumber').text(Random);
 
-    var num1 = Math.floor(Math.random() * 11 + 1); 
-    var num2 = Math.floor(Math.random() * 11 + 1); 
-    var num3 = Math.floor(Math.random() * 11 + 1); 
-    var num4 = Math.floor(Math.random() * 11 + 1); 
+    var num1 = Math.floor(Math.random() * 11 + 1);
+    var num2 = Math.floor(Math.random() * 11 + 1);
+    var num3 = Math.floor(Math.random() * 11 + 1);
+    var num4 = Math.floor(Math.random() * 11 + 1);
 
     let score = 0;
     let wins = 0;
@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     $('#winstracker').text(wins);
     $('#losetracker').text(losses);
-    $('#score').text(score); 
+    $('#score').text(score);
 
     function reset() {
         Random = Math.floor(Math.random() * 101 + 19);
