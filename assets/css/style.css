@@ -1,47 +1,43 @@
 body {
     background-image: url("../images/background-image.jpeg");
     width: 50%; 
-    margin: 10px; 
   }
-
-div {
-    padding: 10px; 
-}
 
 header {
     background-color: orange; 
     text-align: center;
     width: 50%;
-    margin: 10px; 
+    margin-bottom: 25px; 
 }
 .container {
     background-color: tan; 
     color: green; 
-    margin: 10px; 
+    padding-bottom: 100px; 
+    margin-bottom: 25px; 
 }
 #numberNeeded{
     background-color: lightgreen; 
     float: left; 
     width: 70%; 
-
+    height: 100px; 
+    margin-right: 10px; 
+    margin-bottom: 25px; 
 }
+
 .sidebar {
     background-color: aqua; 
     float: right; 
-    width: 30%; 
-
-}
-#numberNeeded, .sidebar {
-    height: 100px; 
-    float: left;
+    width: 25%; 
+    margin-bottom: 25px; 
 }
 
-.row {
-    background-color: white;
-    float: right; 
+.images {
+    display: inline-block; 
+    margin-bottom: 25px; 
 }
 
 #scoreboard {
     background-color: teal; 
-
+    width: 50%;
+    height: 100px;  
 }

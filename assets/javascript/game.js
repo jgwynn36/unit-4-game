@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    var Random = Math.floor(Math.random() * 101 + 19)
+    var Random = Math.floor(Math.random() * 101 + 19); 
 
-    $('randomNumber').text(Random);
+    $('#randomNumber').text(Random);
 
-    var num1 = Math.floor(Math.random() * 11 + 1)
-    var num2 = Math.floor(Math.random() * 11 + 1)
-    var num3 = Math.floor(Math.random() * 11 + 1)
-    var num4 = Math.floor(Math.random() * 11 + 1)
+    var num1 = Math.floor(Math.random() * 11 + 1); 
+    var num2 = Math.floor(Math.random() * 11 + 1); 
+    var num3 = Math.floor(Math.random() * 11 + 1); 
+    var num4 = Math.floor(Math.random() * 11 + 1); 
 
     let score = 0;
     let wins = 0;
@@ -14,6 +14,7 @@ $(document).ready(function () {
 
     $('#winstracker').text(wins);
     $('#losetracker').text(losses);
+    $('#score').text(score); 
 
     function reset() {
         Random = Math.floor(Math.random() * 101 + 19);
@@ -24,7 +25,7 @@ $(document).ready(function () {
         num3 = Math.floor(Math.random() * 11 + 1);
         num4 = Math.floor(Math.random() * 11 + 1);
         score = 0;
-        $('#scoreboard').text(score);
+        $('#score').text(score);
     }
 
     function win() {
@@ -54,7 +55,7 @@ $(document).ready(function () {
     })
 
     $('#blueGem').on('click', function () {
-        score = score + num1;
+        score = score + num2;
         console.log("New score=" + score);
         $('#score').text(score);
         if (score === Random) {
@@ -66,7 +67,7 @@ $(document).ready(function () {
     })
 
     $('#redGem').on('click', function () {
-        score = score + num1;
+        score = score + num3;
         console.log("New score=" + score);
         $('#score').text(score);
         if (score === Random) {
@@ -78,7 +79,7 @@ $(document).ready(function () {
     })
 
     $('#topaz').on('click', function () {
-        score = score + num1;
+        score = score + num4;
         console.log("New score=" + score);
         $('#score').text(score);
         if (score === Random) {
