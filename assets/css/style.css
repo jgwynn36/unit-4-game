@@ -23,30 +23,25 @@ header {
     background-color: lightgreen; 
     float: left; 
     width: 70%; 
-    padding-right: 5%; 
 
 }
 .sidebar {
     background-color: aqua; 
     float: right; 
-    width: 25%; 
+    width: 30%; 
+
 }
 #numberNeeded, .sidebar {
     height: 100px; 
+    float: left;
 }
-#scoreboard { 
-    background-color: gray; 
+
+.row {
+    background-color: white;
+    float: right; 
+}
+
+#scoreboard {
+    background-color: teal; 
 
 }
-.column {
-    float: left;
-    width: 25%;
-    padding: 15px;
-    background-color: black;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
